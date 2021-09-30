@@ -1,0 +1,100 @@
+:root{
+  --White: seashell;
+  --salmon: salmon;
+  --bg-color: grey;
+}
+
+/****** Nav *********/
+header {
+  background: url(IMG/MainPhoto.png);
+  background-size: cover;
+  height: 125vh;
+  width: auto;
+}
+header h1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+h2{
+  text-align: center;
+  text-decoration-color: var(--White);
+}
+nav{
+  flex: 1;
+  text-align: right;
+  padding-top: 0%;
+}
+ul{
+  display: inline-block;
+  list-style-type: none;
+  text-align: right;
+  color: var(--White);
+}
+ul li{
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  color: var(--White);
+}
+a{
+  text-decoration:  none;
+  color: black;
+}
+p{
+  text-decoration:  none;
+  color: black;
+}
+
+h3{
+text-align: center;
+text-decoration-color: var(--salmon);
+padding-top: 5%;
+padding-bottom: 5%;
+}
+/****** End of Nav *********/
+
+/****** product *****/
+
+.YingYang{
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+/***** End of product ****/
+
+/******** products *********/
+.Featured-Products{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10%;
+ }
+
+/********* End of Products *******/
+
+.CallToAction header{
+  padding-bottom: 10%;
+}
+
+
+/********* End of Products *******/
+
+/********* Footer ********/
+footer {
+  background-color: grey;
+}
+
+/******* End of Footer ******/
+
+/******** Form ********/
+form {
+  display: flex;
+  justify-content: right;
+  padding-top: 1%;
+}
+/********* End of Form *****/
+
+
+/********* About *******/
