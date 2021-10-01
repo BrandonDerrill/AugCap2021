@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "Code",
+			"path": ".."
+		},
+		{
+			"name": "AugCap2021",
+			"path": "."
+		}
+	],
+	"settings": {
+		"better-comments.highlightPlainText": true,
+		"files.autoSave": "onFocusChange",
+		"stylelint.enable": true,
+		"terminal.integrated.fontFamily": "'Inconsolata', monospace",
+		"workbench.colorTheme": "Material Theme",
+		"workbench.iconTheme": "material-icon-theme",
+		"workbench.view.alwaysShowHeaderActions": true,
+		"liveServer.settings.multiRootWorkspaceName": "Code"
+	}
+}
