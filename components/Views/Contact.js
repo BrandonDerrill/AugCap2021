@@ -1,9 +1,7 @@
-import CallToAction from "../../IMG/CallToAction.png";
-
 export default () => `
 
 <h1>Join the Pledge</h1>
-<img src=" ${CallToAction} ">
+
 
 
 

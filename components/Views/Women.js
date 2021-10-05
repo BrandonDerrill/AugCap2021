@@ -1,4 +1,6 @@
 export default () => `
+
+
 <<!---------------------Women Products-------------------------->
 <div class="Featured-Products">
     <div><img src="IMG/girl-holding-her-hoodie-mockup-while-standing-near-a-metal-column-a17743.png" width="400px"> </div>
