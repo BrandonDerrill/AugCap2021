@@ -1,5 +1,7 @@
-export default () =>`
-<img src="IMG/aboutPic.jpg" width="1399">
+import AboutPhoto from "../../IMG/AboutPhoto.jpg";
+
+export default () => `
+<img src=" ${AboutPhoto} ">
 <h1>We Create the Apparel. You Re-Create the Paradigm.</h1>
     <p>
 

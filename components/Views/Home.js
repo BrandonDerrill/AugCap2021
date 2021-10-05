@@ -3,6 +3,7 @@ import CourtTrenchHat from "../../IMG/Court_Trench_Hat.png";
 import BrittHoldingHoodie from "../../IMG/Britt_Holding_Hoodie.png";
 import MikeBlackShirt from "../../IMG/Mike_Black_Shirt.jpg";
 import YinYangBag from "../../IMG/YinYangBag.jpg";
+import CallToAction from "../../IMG/CallToAction.png";
 
 export default () => `
 
@@ -26,8 +27,8 @@ export default () => `
     <h3> <a href="contact.html">Join the Pledge</thead></a>
 </div>
 <div class="CallToAction header">
-<a href="contact.html"> <img src="img/CallToAction.png"  width="325px" height="335px">
-<a href="contact.html"> <img src="img/CallToAction.png"  width="325px" height="335px">
-<a href="contact.html"> <img src="img/CallToAction.png"  width="325px" height="335px">
-<a href="contact.html"> <img src="img/CallToAction.png"  width="325px" height="335px">
+<img src=" ${CallToAction} ">
+<img src=" ${CallToAction} ">
+<img src=" ${CallToAction} ">
+<img src=" ${CallToAction} ">
 </div>>`;

@@ -13,7 +13,7 @@
 }
 header h1 {
   display: flex;
-  justify-content: ;
+  justify-content:
 }
 
 h2{
@@ -78,7 +78,11 @@ padding-bottom: 5%;
 .CallToAction header{
   padding-bottom: 10%;
 }
-
+.CallToAction {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+}
 
 /********* End of Products *******/
 
@@ -99,6 +103,7 @@ form {
 
 
 /********* About *******/
+
 
 h1{
   text-align: center;
