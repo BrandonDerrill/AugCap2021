@@ -1,6 +1,10 @@
 export default () => `
 
 <h1>Join the Pledge</h1>
+<p> Help us combat social injustice in fashion as well
+as in other creative industries by joining our monthly
+newsletter.
+</p>
 
 
 
