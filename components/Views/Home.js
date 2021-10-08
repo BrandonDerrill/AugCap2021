@@ -4,32 +4,42 @@ import BrittHoldingHoodie from "../../IMG/Britt_Holding_Hoodie.png";
 import MikeBlackShirt from "../../IMG/Mike_Black_Shirt.jpg";
 import YinYangBag from "../../IMG/YinYangBag.jpg";
 import CallToAction from "../../IMG/CallToAction.png";
+import NavyRedJoggers from "../../IMG/Navy_Red_Joggers.png";
+import RoyalWhiteJoggers from "../../IMG/Royal_White_Joggers.png";
 
 export default () => `
 <img src=" ${MainPhoto} ">
 
 
 <div class="YinYangBag">
-<img src=" ${YinYangBag} ">
+<a href="http://www.localhost:1234/Cart"> <img src=" ${YinYangBag}" height="200px"> </a>
 </div>
 <div>
 <h3> <a href="Featured Products">Featured Products</a>
 </div>
 
-<<!---------------------Featured Products-------------------------->
+<!---------------------Featured Products-------------------------->
 <div class="Featured-Products">
-    <img src=" ${BrittHoldingHoodie} ">
-    <img src=" ${MikeBlackShirt} ">
-    <img src=" ${CourtTrenchHat} ">
+    <a href="http://www.localhost:1234/Cart"> <img src=" ${BrittHoldingHoodie}" height="490px"> </a>
+    <a href="http://www.localhost:1234/Cart"> <img src=" ${MikeBlackShirt}" height="490px"> </a>
+    <a href="http://www.localhost:1234/Cart"> <img src=" ${CourtTrenchHat}" height="490px"> </a>
+</div>
+
+<!--------------------- Joggers -------------------------->
+
+<div class="Joggers">
+    <a href="http://www.localhost:1234/Cart"> <img src=" ${NavyRedJoggers}" height="490px"> </a>
+    <a href="http://www.localhost:1234/Cart"> <img src=" ${RoyalWhiteJoggers}" height="525px"> </a>
 
 </div>
 
 <div>
-    <h3> <a href="contact.html">Join the Pledge</thead></a>
+    <h3> <a href="http://www.localhost:1234/Contact">Join the Pledge</thead></a>
 </div>
+
 <div class="CallToAction ">
-<img src=" ${CallToAction} ">
-<img src=" ${CallToAction} ">
-<img src=" ${CallToAction} ">
-<img src=" ${CallToAction} ">
-</div>>`;
+    <a href="http://www.localhost:1234/Contact"> <img src=" ${CallToAction}" height="325px"> </a>
+    <a href="http://www.localhost:1234/Contact"> <img src=" ${CallToAction}" height="325px"> </a>
+    <a href="http://www.localhost:1234/Contact"> <img src=" ${CallToAction}" height="325px"> </a>
+    <a href="http://www.localhost:1234/Contact"> <img src=" ${CallToAction}" height="325px"> </a>
+</div>`;

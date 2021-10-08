@@ -68,7 +68,6 @@ padding-bottom: 5%;
 .Featured-Products{
   display: flex;
   justify-content: space-around;
-  height: 75vh;
   padding-bottom: 10%;
  }
 
@@ -80,7 +79,6 @@ padding-bottom: 5%;
 .CallToAction {
   display: flex;
   justify-content: center;
-  height: 50vh;
 }
 
 /********* End of Products *******/
@@ -102,19 +100,25 @@ form {
 
 
 /********* About *******/
-.About-Photo2 {
-  background-size: cover;
-  height: 75vh;
-
+.Joggers {
+  display: flex;
+  justify-content: center;
 }
 
+/********* End of Joggers *****/
+
+/********* About *******/
+.About-Photo2 {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
 
 h1{
   text-align: center;
 }
 
 /********* End of About *****/
-
 
 /****************Men***************/
 
