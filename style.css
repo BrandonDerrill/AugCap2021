@@ -68,7 +68,6 @@ padding-bottom: 5%;
 .Featured-Products{
   display: flex;
   justify-content: space-around;
-  height: 75vh;
   padding-bottom: 10%;
  }
 
@@ -80,7 +79,6 @@ padding-bottom: 5%;
 .CallToAction {
   display: flex;
   justify-content: center;
-  height: 50vh;
 }
 
 /********* End of Products *******/
@@ -102,11 +100,52 @@ form {
 
 
 /********* About *******/
+.Joggers {
+  display: flex;
+  justify-content: center;
+}
 
+/********* End of Joggers *****/
+
+/********* About *******/
+.About-Photo2 {
+  display: flex;
+  justify-content: center;
+  height: 75vh;
+}
 
 h1{
   text-align: center;
 }
 
+/********* End of About *****/
 
+/****************Men***************/
+
+.Men-Products{
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  padding-bottom: 10%;
+ }
+
+
+ .Men-Products2{
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  padding-bottom: 10%;
+ }
+/********* End of Men ***********/
+
+/***************Women***************/
+
+.Women-Products{
+  display: flex;
+  justify-content: space-around;
+  height: 55vh;
+  padding-bottom: 10%;
+ }
+
+/***************End of Women**********/
 

@@ -1,7 +1,11 @@
-import AboutPhoto from "../../IMG/AboutPhoto.jpg";
+import AboutPhoto2 from "../../IMG/AboutPhoto2.png";
 
 export default () => `
-<img src=" ${AboutPhoto} ">
+<div class="About-Photo2">
+<img src=" ${AboutPhoto2} ">
+
+</div>;
+
 <h1>We Create the Apparel. You Re-Create the Paradigm.</h1>
     <p>
 
