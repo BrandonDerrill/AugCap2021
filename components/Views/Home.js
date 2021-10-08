@@ -6,8 +6,8 @@ import YinYangBag from "../../IMG/YinYangBag.jpg";
 import CallToAction from "../../IMG/CallToAction.png";
 
 export default () => `
-
 <img src=" ${MainPhoto} ">
+
 
 <div class="YinYangBag">
 <img src=" ${YinYangBag} ">
@@ -23,10 +23,11 @@ export default () => `
     <img src=" ${CourtTrenchHat} ">
 
 </div>
+
 <div>
     <h3> <a href="contact.html">Join the Pledge</thead></a>
 </div>
-<div class="CallToAction header">
+<div class="CallToAction ">
 <img src=" ${CallToAction} ">
 <img src=" ${CallToAction} ">
 <img src=" ${CallToAction} ">

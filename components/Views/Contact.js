@@ -6,10 +6,6 @@ as in other creative industries by joining our monthly
 newsletter.
 </p>
 
-
-
-
-
         <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
         <fieldset id="fs-frm-inputs">
           <label for="full-name">Full Name</label>
