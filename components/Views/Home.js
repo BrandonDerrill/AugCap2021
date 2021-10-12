@@ -6,10 +6,16 @@ import YinYangBag from "../../IMG/YinYangBag.jpg";
 import CallToAction from "../../IMG/CallToAction.png";
 import NavyRedJoggers from "../../IMG/Navy_Red_Joggers.png";
 import RoyalWhiteJoggers from "../../IMG/Royal_White_Joggers.png";
+const kelvinToFahrenheit = kelvinTemp =>
+  Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
 
-export default () => `
+export default st => `
 <img src=" ${MainPhoto} ">
 
+<h3>
+Weather in ${st.weather.city} ${kelvinToFahrenheit(st.weather.temp)}F, feels
+like ${kelvinToFahrenheit(st.weather.feelsLike)}F
+</h3>
 
 <div class="YinYangBag">
 <a href="http://www.localhost:1234/Cart"> <img src=" ${YinYangBag}" height="200px"> </a>

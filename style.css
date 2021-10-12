@@ -91,13 +91,70 @@ footer {
 /******* End of Footer ******/
 
 /******** Form ********/
-form {
-  display: flex;
-  justify-content: right;
-  padding-top: 1%;
+form{
+  box-sizing: border-box;
+  background: url(IMG/CallToAction.png);
+  background-size: center center;
+  height: 50vh;
 }
-/********* End of Form *****/
 
+.wrapper{
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+.form-area{
+  width: 600px;
+  height: 500px;
+  display: flex;
+  background-color: black;
+  border-radius: 25px;
+  padding: 2em;
+}
+
+.msg-area{
+  display: fex;
+  flex-direction: column-reverse;
+}
+
+.msg-area textarea{
+  flex: 1;
+  min-width: 1em;
+  min-height: 1em;
+  background: white ;
+  color: white;
+  margin-top: 50px;
+  margin-left: 19px;
+  border: 19px;
+}
+
+.details-area{
+  flex: 40px;
+  order: 1;
+  text-align: center;
+}
+
+.details-area button{
+  background: white;
+  color:black ;
+  border: 6px;
+  padding: 15px 50px;
+  border-radius: 50px;
+  font-family: fantasy;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+P{
+    color: aqua;
+    margin-top: 80px;
+}
+
+h1{
+  color: red;
+  text: var(--salmon);
+}
 
 /********* About *******/
 .Joggers {
