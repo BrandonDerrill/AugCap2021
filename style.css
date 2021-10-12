@@ -146,14 +146,15 @@ form{
   margin-top: 70px;
 }
 
-P{
-    color: aqua;
-    margin-top: 80px;
-}
 
 h1{
   color: red;
   text: var(--salmon);
+}
+
+P{
+  font-size: 22px;
+  color: beige;
 }
 
 /********* About *******/
