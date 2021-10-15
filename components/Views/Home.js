@@ -4,8 +4,7 @@ import BrittHoldingHoodie from "../../IMG/Britt_Holding_Hoodie.png";
 import MikeBlackShirt from "../../IMG/Mike_Black_Shirt.jpg";
 import YinYangBag from "../../IMG/YinYangBag.jpg";
 import CallToAction from "../../IMG/CallToAction.png";
-import NavyRedJoggers from "../../IMG/Navy_Red_Joggers.png";
-import RoyalWhiteJoggers from "../../IMG/Royal_White_Joggers.png";
+import GkWallArt from "../../IMG/GK-wallArt.png";
 const kelvinToFahrenheit = kelvinTemp =>
   Math.round((kelvinTemp - 273.15) * (9 / 5) + 32);
 
@@ -31,11 +30,16 @@ like ${kelvinToFahrenheit(st.weather.feelsLike)}F
     <a href="http://www.localhost:1234/Cart"> <img src=" ${CourtTrenchHat}" height="490px"> </a>
 </div>
 
-<!--------------------- Joggers -------------------------->
+<!--------------------- Wall-Art -------------------------->
 
-<div class="Joggers">
-    <a href="http://www.localhost:1234/Cart"> <img src=" ${NavyRedJoggers}" height="490px"> </a>
-    <a href="http://www.localhost:1234/Cart"> <img src=" ${RoyalWhiteJoggers}" height="525px"> </a>
+<div>
+    <h3> <a href="http://www.localhost:1234/Art">Art</thead></a>
+</div>
+
+
+<div class="Wall-Art">
+    <a href="http://www.localhost:1234/Art"> <img src=" ${GkWallArt}" height="490px"> </a>
+
 
 </div>
 
