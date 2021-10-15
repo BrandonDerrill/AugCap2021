@@ -157,13 +157,13 @@ P{
   color: beige;
 }
 
-/********* About *******/
-.Joggers {
+/********* Wall-Art *******/
+.Wall-Art {
   display: flex;
   justify-content: center;
 }
 
-/********* End of Joggers *****/
+/********* End of Wall-Art *****/
 
 /********* About *******/
 .About-Photo2 {
