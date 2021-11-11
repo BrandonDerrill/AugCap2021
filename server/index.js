@@ -1,44 +1,24 @@
 const express = require("express");
-const products = require("./routes/products");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 
 dotenv.config();
 const app = express();
 
-mongoose.connect(process.env.MONGODB);
-const db = mongoose.connection;
-
-db.on("error", console.error.bind(console, "Connection error:"));
-db.once(
-  "open",
-  console.log.bind(console, "Successfully opened connection to Mongo!")
-);
+const db = process.env.DATABASE;
+mongoose.connect(db).then(() => console.log("DATABASE CONNECTION SUCCESSFUL"));
 
 const logging = (request, response, next) => {
   console.log(`${request.method} ${request.url} ${Date.now()}`);
   next();
 };
 
+const productRouter = require("./routes/productRoutes");
+
 app.use(express.json());
 app.use(logging);
-app.use("/products", products);
 
-app
-  .route("/status")
-  .get((request, response) => {
-    response.status(200).json({ message: "Service healthy" });
-  })
-  .post((request, response) => {
-    response.json({ requestBody: request.body });
-  });
-
-app.route("/users/:id").get((request, response) => {
-  // express adds a "params" Object to requests
-  const id = request.params.id;
-  // handle GET request for post with an id of "id"
-  response.send(JSON.stringify({ user_id: id }));
-});
+app.use("/api/v1/products", productRouter);
 
 const PORT = process.env.PORT || 4040;
 

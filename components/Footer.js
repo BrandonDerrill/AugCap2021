@@ -1,5 +1,6 @@
 export default () => `
 
+
 <footer>
 <li><a href="http://www.localhost:1234/Home">Home</a></li>
 <li><a href="http://www.localhost:1234/Men">Mens</a></li>
@@ -8,4 +9,7 @@ export default () => `
 <li><a href="http://www.localhost:1234/About">About</a></li>
 <li><a href="http://www.localhost:1234/Contact">Contact</a></li>
 </ul>
+
+
+
 </footer>`;

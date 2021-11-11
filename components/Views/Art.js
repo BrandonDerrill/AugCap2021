@@ -1,9 +1,18 @@
-import GkWallArt from "../../IMG/GK-wallArt.png";
+import productCard9 from "../../IMG/productCard9.png";
 
 export default () => `
 
-<div class="Wall-Art">
-    <a href="http://www.localhost:1234/Art"> <img src=" ${GkWallArt}" height="490px"> </a>
-
-
-</div>`;
+<<!---------------------Wall-Art-------------------------->
+<section class="Wall-Art">
+    <div class="product-container">
+        <div class="product-card">
+            <div class="product-image">
+                  <span class="new-item">New $60</span>
+                  <img src=" ${productCard9}" class="product-thumb" alt="">
+                  <button class="wish-btn">add to wishlist</button>
+            </div>
+            <div class="product-info">
+            </div>
+        </div>
+    </div>
+</section>`;
