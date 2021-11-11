@@ -4,13 +4,6 @@
   --bg-color: grey;
 }
 
-/****** Hero *********/
-.MainPhoto {
-  background: url(IMG/MainPhoto.png);
-  background-size: cover;
-  height: 100vh;
-
-}
 header h1 {
   display: flex;
 }
@@ -20,9 +13,12 @@ h2{
   text-decoration-color: var(--White);
 }
 
-/****** Nav *********/
+
+/******************* Nav ******************/
 nav{
-  text-align: right;
+  text-align: ;
+  z-index: 1;
+
 }
 ul{
   display: inline-block;
@@ -36,6 +32,7 @@ ul li{
   text-decoration: none;
   color: var(--White);
 }
+
 a{
   text-decoration:  none;
   color: black;
@@ -51,27 +48,70 @@ text-decoration-color: var(--salmon);
 padding-top: 5%;
 padding-bottom: 5%;
 }
-/****** End of Nav *********/
 
-/****** product *****/
+/******************** End of Nav **************/
+
+/******************* Search ********************/
+
+.nav-search{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+}
+
+.search-nav{
+  display: flex;
+  justify-content: right;
+}
+.search-items{
+  display: flex;
+  align-items: centerS;
+}
+
+.search{
+  width: 500px;
+  display: flex;
+}
+.search-box{
+  width: 80%;
+  height: 10px;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid red;
+  text-transform: capitalize;
+  background: none;
+  counter-reset: red;
+  outline: none;
+}
+
+
+
+/****************** YinYangBag ******************/
 
 .YinYangBag{
   display: flex;
   justify-content: center;
-  padding-top: 20%;
+  padding-top: 10%;
   padding-bottom: 5%;
 }
 
-/***** End of product ****/
+/**************** End of YinYangBag ******************/
 
-/******** products *********/
+
+/**************** Featured-products ****************/
 .Featured-Products{
   display: flex;
   justify-content: space-around;
   padding-bottom: 10%;
  }
 
-/********* End of Products *******/
+/***************** End of featured-Products **********/
+
+/******************* Pledge ******************/
 
 .CallToAction h1{
   padding-bottom: 10%;
@@ -81,16 +121,20 @@ padding-bottom: 5%;
   justify-content: center;
 }
 
-/********* End of Products *******/
+/*************** End of Pledge **************/
 
-/********* Footer ********/
+/******************* Footer ********************/
 footer {
+  height: 150px;
+  padding-block-start: ;
   background-color: grey;
 }
 
-/******* End of Footer ******/
 
-/******** Form ********/
+/******************* End of Footer ********************/
+
+
+/********************** Form ************************/
 form{
   box-sizing: border-box;
   background: url(IMG/CallToAction.png);
@@ -126,6 +170,7 @@ form{
   margin-top: 50px;
   margin-left: 19px;
   border: 19px;
+  font-size: 200;
 }
 
 .details-area{
@@ -157,53 +202,314 @@ P{
   color: beige;
 }
 
-/********* Wall-Art *******/
+/********************* End of Form ****************/
+
+
+/********************* Wall-Art ****************/
+
 .Wall-Art {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-direction:  row-reverse;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
 }
 
-/********* End of Wall-Art *****/
+.product-container{
+  padding: 0 18px;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
 
-/********* About *******/
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.product-card{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.product-image{
+  position: relative;
+  width: 150%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+span.new-item{
+  position: absolute;
+}
+
+.wish-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .wish-btn{
+  opacity: 1;
+}
+
+.wish-btn:hover{
+  background: white;
+}
+
+.product-info{
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.product-name{
+  position: absolute;
+  text-transform: uppercase;
+  }
+
+.product-description{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 20px;
+}
+/**************** End of Wall-Art ************/
+
+/***************** About ******************/
 .About-Photo2 {
   display: flex;
   justify-content: center;
   height: 75vh;
 }
 
+.p{
+  text-decoration-color: black;
+}
+
 h1{
   text-align: center;
 }
 
-/********* End of About *****/
+/********************* End of About *****************/
 
-/****************Men***************/
+/**************** Mens cards ***************/
 
-.Men-Products{
+.men-products {
   display: flex;
   justify-content: space-around;
-  height: 55vh;
-  padding-bottom: 10%;
- }
+  flex-direction:  row-reverse;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
 
+.product-container{
+  padding: 0 18px;
+  display: flex;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
 
- .Men-Products2{
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.product-card{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.product-image{
+  position: relative;
+  width: 150%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+span.new-item{
+  position: absolute;
+}
+
+.wish-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .wish-btn{
+  opacity: 1;
+}
+
+.wish-btn:hover{
+  background: white;
+}
+
+.product-info{
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.product-name{
+  position: absolute;
+  text-transform: uppercase;
+  }
+
+.product-description{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 20px;
+}
+/****************** End of Men Cards ***************/
+
+/******************** Women Cards *******************/
+
+.women-products {
   display: flex;
   justify-content: space-around;
-  height: 55vh;
-  padding-bottom: 10%;
- }
-/********* End of Men ***********/
+  flex-direction:  row-reverse;
+  position: relative;
+  overflow: hidden;
+  padding: 20px 0;
+}
 
-/***************Women***************/
-
-.Women-Products{
+.product-container{
+  padding: 0 18px;
   display: flex;
-  justify-content: space-around;
-  height: 55vh;
-  padding-bottom: 10%;
- }
+  overflow: auto;
+  scroll-behavior: smooth;
+}
 
-/***************End of Women**********/
+.product-container::-webkit-scrollbar{
+  display: none;
+}
+
+.product-card{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+
+.product-image{
+  position: relative;
+  width: 150%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.product-thumb{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+span.new-item{
+  position: absolute;
+}
+
+.wish-btn{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 10px;
+  width: 90%;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.product-card:hover .wish-btn{
+  opacity: 1;
+}
+
+.wish-btn:hover{
+  background: white;
+}
+
+.product-info{
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+
+.product-name{
+  position: absolute;
+  text-transform: uppercase;
+  }
+
+.product-description{
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  overflow: hidden;
+  opacity: 0.5;
+  text-transform: capitalize;
+}
+
+.price{
+  font-weight: 900;
+  font-size: 20px;
+}
+/****************   End of Women Cards  ***************/
 
